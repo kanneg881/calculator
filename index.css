@@ -1,0 +1,29 @@
+/* 計算機字型大小 */
+.calculator * {
+    font-size: 24px;
+}
+
+/* 計算機按鈕寬度，不包括 0 按鈕 */
+.calculator button:not(.zero) {
+    width: 60px;
+}
+
+/* 計算機按鈕文字置中 */
+.calculator td:not(.output) {
+    text-align: center;
+}
+
+/* 公式和運算子 */
+.formula, .operator {
+    font-size: 16px;
+}
+
+/* 結果和公式 */
+.output {
+    text-align: right;
+}
+
+/* 計算機 0 按鈕寬度 */
+.zero {
+    width: 126px;
+}

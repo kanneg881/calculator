@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <title>計算機</title>
+  <link rel="stylesheet" href="index.css"/>
+  <script src="index.js"></script>
+</head>
+<body>
+<table class="calculator">
+  <tr>
+    <td class="formula output" colspan="4"></td>
+  </tr>
+  <tr>
+    <td class="result output" colspan="4">0</td>
+  </tr>
+  <tr>
+    <td class="operator output" colspan="4"></td>
+  </tr>
+  <tr>
+    <td>
+      <button onclick="memoryClean()">MC</button>
+    </td>
+    <td>
+      <button onclick="memoryRecall()">MR</button>
+    </td>
+    <td>
+      <button onclick="memoryPlus()">M+</button>
+    </td>
+    <td>
+      <button onclick="memoryMinus()">M-</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button onclick="deleteLastCharacter()">&larr;</button>
+    </td>
+    <td>
+      <button onclick="currentEmpty()">CE</button>
+    </td>
+    <td>
+      <button onclick="clearAll()">C</button>
+    </td>
+    <td>
+      <button onclick="selectOperator('/')">÷</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button onclick="insertNumber('7')">7</button>
+    </td>
+    <td>
+      <button onclick="insertNumber('8')">8</button>
+    </td>
+    <td>
+      <button onclick="insertNumber('9')">9</button>
+    </td>
+    <td>
+      <button onclick="selectOperator('*')">x</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button onclick="insertNumber('4')">4</button>
+    </td>
+    <td>
+      <button onclick="insertNumber('5')">5</button>
+    </td>
+    <td>
+      <button onclick="insertNumber('6')">6</button>
+    </td>
+    <td>
+      <button onclick="selectOperator('-')">-</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button onclick="insertNumber('1')">1</button>
+    </td>
+    <td>
+      <button onclick="insertNumber('2')">2</button>
+    </td>
+    <td>
+      <button onclick="insertNumber('3')">3</button>
+    </td>
+    <td>
+      <button onclick="selectOperator('+')">+</button>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <button class="zero" onclick="insertNumber('0')">0</button>
+    </td>
+    <td>
+      <button onclick="convertToFloat()">.</button>
+    </td>
+    <td>
+      <button onclick="equal()">=</button>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
